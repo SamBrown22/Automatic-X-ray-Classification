@@ -1,0 +1,207 @@
+/* ClassificationDemo.css */
+
+/* --- Classification Model Container --- */
+.classification {
+  box-sizing: border-box; /* Ensure the border is included in the box size */
+  min-height: 80vh;
+  margin: 2%;
+  padding: 10px;
+  width: 100%;
+  transition: height 0.5s ease; /* Transition only the height property */
+  height: auto; /* Set an initial height (adjust as needed) */
+  background-color: #0A0A0A;
+  position: relative;
+  overflow: hidden;
+}
+
+/* --- File Input Styling --- */
+#file-input {
+  display: none;
+}
+
+#file-input-label {
+  display: inline-block;
+  background-color: #6a0386;
+  color: #fff;
+  margin: 1%;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#file-input:hover {
+  background-color: #823899;
+}
+
+.predict-btn {
+  display: inline-block;
+  background-color: #6a0386;
+  color: #fff;
+  margin: 1%;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+}
+
+.predict-btn:hover{
+  background-color: #823899;
+}
+
+/* --- Heading Container Styling --- */
+.heading-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* --- Heading Styling --- */
+.heading {
+  font-size: 6rem;
+  width: 70%;
+  font-weight: 700;
+  text-align: left;
+  color: rgb(255, 252, 252);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-style: italic;
+  margin-bottom: 2%;
+  margin-top: 0;
+}
+
+/* --- Image Styling --- */
+.xray {
+  height: 20rem;
+  width: 25rem;
+  border-radius: 15%;
+  filter: brightness(70%) contrast(120%) invert(4%);
+}
+
+.model-description {
+  margin: 0;
+  font-size: 1.45rem;
+  width: 75%;
+  font-weight: 100;
+  font-family:'Arial Narrow', Arial, sans-serif;
+  text-align: left;
+  color: rgb(255, 252, 252);
+  padding-bottom: 2%;
+}
+
+.test-title {
+  margin: 0;
+  font-size: 2.32rem;
+  text-decoration: underline;
+  width: 100%;
+  font-weight: 100;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: left;
+  color: rgb(255, 252, 252);
+  padding-bottom: 2%;
+}
+
+/* --- Selected Image Container Styling --- */
+.interact-container {
+  margin: 2%;
+  display: flex;
+}
+
+/* --- Selected Image and filename Styling --- */
+.image-selected-container {
+  margin-right: 5%;
+  max-width: 300px;
+}
+
+.selected-image {
+  max-width: 100%;
+  max-height: 400px; /* Set a maximum height */
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 2%;
+}
+
+.file-info {
+  display: flex;
+  width: 100%;
+}
+
+.file-name {
+  flex: 1;
+  font-size: 14px;
+  color: #6a0386;
+  width:auto;
+  padding: 0;
+  margin: 0;
+  padding-right: 0.5em;
+}
+
+/* --- Remove from Screen Button --- */
+.remove-button {
+  background-color: #ff4444;
+  color: #fff;
+  padding: 0;
+  border: none;
+  border-radius: 20%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.remove-button svg {
+  height: 16px;
+  width: 16px;
+}
+
+/* --- Loading Indicator Styling --- */
+.loading-indicator {
+  color: white; /* Adjust the color as needed */
+  font-weight: bold;
+  font-size: 2.32rem;
+  padding: 0.5rem;
+}
+
+/* --- Button Styling --- */
+button:disabled {
+  background-color: #8c8b8b;
+  cursor: not-allowed;
+}
+
+.prediction-title {
+  margin: 0;
+  font-size: 2.32rem;
+  text-decoration: underline;
+  width: 100%;
+  font-weight: 100;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: left;
+  color: rgb(255, 252, 252);
+  padding-bottom: 10%;
+}
+
+.prediction-content {
+  margin: 0;
+  font-size: 1.45rem;
+  width: 100%;
+  font-weight: 100;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: left;
+  color: rgb(255, 252, 252);
+  padding-bottom: 5%;
+}
+
+.buttonLink {
+  padding: 0.5rem;
+  margin-right: 0.2rem;
+  background-color: #6a0386;
+  color: #fff;
+  font-weight: 500;
+  font-style: italic;
+  text-decoration:none ;
+  border-radius: 5px;
+  cursor: pointer;
+}

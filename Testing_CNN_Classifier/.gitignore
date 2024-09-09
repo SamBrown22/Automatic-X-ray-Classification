@@ -1,0 +1,9 @@
+#Datasets
+/Datasets
+
+#Saved Models and corresponding Graphs
+/1model_checkpoint_lr_4.0e-05
+/3model_checkpoint_lr_4.0e-04
+
+#JS Converted Model
+/Js_Model

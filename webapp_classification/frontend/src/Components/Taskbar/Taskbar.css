@@ -1,0 +1,90 @@
+.taskbar {
+  position: relative; /* Set taskbar position to relative */
+  display: flex;
+  background-color: #0f0f0f;
+  width: 100%;
+  justify-content: flex-end; /* Align items to the right */
+}
+
+.taskbar-item {
+  position: relative;
+  color: #fcfbfc;
+  cursor: pointer;
+  padding: 10px;
+  margin: 10px;
+  align-self: center;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+#account {
+  margin-right: 0;
+}
+#credits {
+  margin: 0;
+  margin-right: 20px;
+  padding: 0;
+}
+
+.active {
+  text-decoration: underline;
+  text-decoration-color: #6a0386;
+  text-decoration-thickness: 0.2rem;
+}
+
+.taskbar-item:hover {
+  text-decoration: underline;
+  text-decoration-color: #823899;
+  text-decoration-thickness: 0.2rem;
+}
+
+.profile-img {
+  outline: 0.2rem solid transparent;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+}
+
+.profile-img:hover {
+  outline-color: #823899;
+}
+
+.taskbar-item.active .profile-img {
+  outline-color: #6a0386; 
+}
+
+.dropbtn {
+  position: absolute; /* Position the button absolutely */
+  top: 0;
+  left: 0;
+  width: 100%; /* Make the button cover the entire container */
+  height: 100%;
+  opacity: 0; /* Hide the button */
+  cursor: pointer; /* Set cursor to pointer */
+}
+
+.dropbtn span {
+  display: block; /* Display the arrow as a block element */
+  margin-left: auto; /* Push the arrow to the right */
+  margin-right: 5px; /* Add some space between the text and the arrow */
+}
+
+.dropdown-content {
+  position: absolute;
+  top: 100%; /* Position dropdown content below the dropdown button */
+  right: 0; /* Align dropdown content to the right */
+  background-color: #0f0f0f;
+  min-width: 120px;
+  z-index: 1;
+}
+
+.dropdown-item {
+  color: #fcfbfc;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-item:hover {
+  background-color: #823899;
+}
+

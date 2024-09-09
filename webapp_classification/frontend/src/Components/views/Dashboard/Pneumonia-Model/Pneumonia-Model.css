@@ -1,0 +1,208 @@
+/* ClassificationModel.css */
+
+/* --- Classification Model Container --- */
+.pneumonia-model {
+  box-sizing: border-box; /* Ensure the border is included in the box size */
+  min-height: 80vh;
+  margin: 2%;
+  padding: 10px;
+  width: 80%;
+  transition: height 0.5s ease; /* Transition only the height property */
+  height: auto; /* Set an initial height (adjust as needed) */
+  background-color: #0A0A0A;
+  position: relative;
+  overflow: hidden;
+}
+
+/* --- File Input Styling --- */
+#pneumonia-file-input {
+  display: none;
+}
+
+#pneumonia-file-input-label,
+.pneumonia-predict-btn {
+  display: inline-block;
+  background-color: #6a0386;
+  color: #fff;
+  padding: 12px 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  border: none; /* Remove border from the button */
+}
+
+#pneumonia-file-input-label {
+  margin-right: 20px;
+  padding: 13px;
+}
+
+#pneumonia-file-input-label:hover,
+.pneumonia-predict-btn:hover {
+  background-color: #823899;
+}
+
+/* --- Heading Container Styling --- */
+.pneumonia-heading-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* --- Heading Styling --- */
+.pneumonia-heading {
+  font-size: 4rem;
+  width: 100%;
+  font-weight: 700;
+  text-align: left;
+  color: rgb(255, 252, 252);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-style: italic;
+  margin-bottom: 2%;
+  margin-top: 0;
+}
+
+.pneumonia-model-description {
+  margin: 0;
+  font-size: 1.45rem;
+  width: 75%;
+  font-weight: 100;
+  font-family:'Arial Narrow', Arial, sans-serif;
+  text-align: left;
+  color: rgb(255, 252, 252);
+  padding-bottom: 2%;
+}
+
+.pneumonia-test-title {
+  margin: 0;
+  font-size: 2.32rem;
+  text-decoration: underline;
+  width: 100%;
+  font-weight: 100;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: left;
+  color: rgb(255, 252, 252);
+  padding-bottom: 2%;
+}
+
+/* --- Selected Image Container Styling --- */
+.pneumonia-interact-container {
+  display: flex;
+  overflow-y: auto; /* Enable vertical scrolling if the container overflows */
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+  flex-wrap: wrap; /* Ensure images wrap */
+  max-height: 450px; /* Set a maximum height for the container */
+}
+
+/* --- Selected Image and filename Styling --- */
+.pneumonia-image-selected-container {
+  margin-right: 25px;
+  flex-grow: 1; /* Allow images to grow and shrink based on available space */
+  max-width: 200px; /* Ensure images don't exceed 200px */
+  width: 10%; /* Determines Minimum width for images */
+  margin-bottom: 50px;
+}
+
+.pneumonia-selected-image {
+  width: 100%; /* Ensure all images have the same width */
+  height: 100%; /* Set a fixed height for all images */
+  object-fit: cover; /* Ensure the image covers the entire container */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 2%;
+}
+
+.pneumonia-file-info {
+  display: flex;
+  margin: 0;
+}
+
+.pneumonia-file-name {
+  font-size: 14px;
+  flex: 1;
+  color: #6a0386;
+  max-width: 100%;
+  width: auto;
+  padding: 0;
+  margin: 0;
+  padding-right: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+
+/* --- Remove from Screen Button --- */
+.pneumonia-remove-button {
+  background-color: #ff4444;
+  color: #fff;
+  padding: 0;
+  border: none;
+  border-radius: 20%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.pneumonia-remove-button svg {
+  height: 16px;
+  width: 16px;
+}
+
+/* Scroll bar styling */
+.pneumonia-interact-container::-webkit-scrollbar {
+  width: 5px; /* Width of the scroll bar */
+}
+
+.pneumonia-interact-container::-webkit-scrollbar-track {
+  background: #fffefe; /* Color of the track */
+}
+
+.pneumonia-interact-container::-webkit-scrollbar-thumb {
+  background: #6a0386; /* Color of the scroll thumb */
+  border-radius: 5px ; /* Rounded corners for the thumb */
+}
+
+.pneumonia-interact-container::-webkit-scrollbar-thumb:hover {
+  background: #2f0133; /* Color of the thumb on hover */
+}
+
+/* --- Loading Indicator Styling --- */
+.pneumonia-loading-indicator {
+  color: white; /* Adjust the color as needed */
+  font-weight: bold;
+  font-size: 2.32rem;
+  padding: 0.5rem;
+}
+
+/* --- Button Styling --- */
+button:disabled {
+  background-color: #8c8b8b;
+  cursor: not-allowed;
+}
+
+.pneumonia-prediction-title {
+  margin: 0;
+  font-size: 2.32rem;
+  text-decoration: underline;
+  width: 100%;
+  font-weight: 100;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: left;
+  color: rgb(255, 252, 252);
+  padding-bottom: 20px;
+}
+
+.pneumonia-prediction-content {
+  margin: 0;
+  font-size: 1.45rem;
+  width: 100%;
+  font-weight: 100;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: left;
+  color: rgb(255, 252, 252);
+  padding-bottom: 5px;
+}
+

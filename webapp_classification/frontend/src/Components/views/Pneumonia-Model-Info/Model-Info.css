@@ -1,0 +1,93 @@
+.Info-Container {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  min-height: 80vh;
+  margin: 2%;
+  padding: 10px;
+  width: 100%;
+  transition: height 0.5s ease;
+  height: auto;
+  background-color: #0A0A0A;
+  position: relative;
+  overflow: hidden;
+}
+
+.Info-heading {
+  font-size: 6rem;
+  width: 100%;
+  font-weight: 700;
+  text-align: left;
+  color: rgb(255, 252, 252);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-style: italic;
+  margin-bottom: 5%;
+  margin-top: 0;
+}
+
+.section {
+  display: flex;
+  flex-grow: 1; /* Allow the section to grow vertically */
+  margin-bottom: 20px;
+}
+
+.graph-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-grow: 1; /* Allow the graph container to grow vertically */
+  max-width: 50%;
+  min-width: min-content; /* Alternatively, you can set min-width: 0; */
+  border: 1px solid white;
+  padding: 10px;
+}
+
+.graphs {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.graph {
+  flex-shrink: 1;
+  flex-basis: calc(50% - 6px);
+  max-width: 50%;
+  min-width: 250px;
+  height: auto;
+  margin-bottom: 2%;
+}
+
+.caption {
+  flex-shrink: 1;
+  width: 100%; /* Ensure the caption spans the same width as the graphs container */
+  font-size: 1em;
+  background-color: #0A0A0A;
+  margin: 0;
+  color: white;
+}
+
+.matrix {
+  flex-grow: 1;
+  flex-basis: 30%;
+  max-width: 100%;
+  margin-bottom: 2%;
+}
+.content{
+  margin: 0;
+  font-size: 1.45rem;
+  width: 100%;
+  font-weight: 300;
+  font-family: 'Arial Narrow', Arial, sans-serif;
+  text-align: left;
+  color: rgb(255, 252, 252);
+  flex-grow: 1;
+}
+
+#left {
+  margin-right: 15px;
+}
+
+#right {
+  margin-left: 15px;
+}

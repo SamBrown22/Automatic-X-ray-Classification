@@ -1,0 +1,127 @@
+.history-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: rgb(218, 215, 215);
+    width:80%;
+    margin-left: 50px;
+    height: 100%;
+}
+
+/* --- DATEPICKER --- */
+.date-picker-section {
+  width: 30%;
+  align-self: center;
+  margin-top: 20px;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.datepicker {
+  background-color: rgb(19, 18, 19);
+  border-radius: 5px;
+}
+
+.datepicker label {
+  color: #9c27b0;
+  font-weight: 400;
+}
+
+/* Selected Date and today button */
+input.css-nxo287-MuiInputBase-input-MuiOutlinedInput-input,
+button.css-1e6y48t-MuiButtonBase-root-MuiButton-root{
+  color: rgb(218, 215, 215);
+}
+
+/* Arrows to change page */
+button.css-kg9q0s-MuiButtonBase-root-MuiIconButton-root-MuiPickersArrowSwitcher-button,
+button.css-12mkn7b-MuiButtonBase-root-MuiIconButton-root-MuiPickersCalendarHeader-switchViewButton,
+button.css-1prhkyx-MuiButtonBase-root-MuiIconButton-root-MuiPickersCalendarHeader-switchViewButton{
+  color: rgb(218, 215, 215);
+}
+
+/*  Arrows for Page Change hover */
+button.css-kg9q0s-MuiButtonBase-root-MuiIconButton-root-MuiPickersArrowSwitcher-button:hover,
+button.css-1nkg345-MuiButtonBase-root-MuiIconButton-root-MuiPickersArrowSwitcher-button:hover,
+button.css-12mkn7b-MuiButtonBase-root-MuiIconButton-root-MuiPickersCalendarHeader-switchViewButton:hover,
+button.css-1prhkyx-MuiButtonBase-root-MuiIconButton-root-MuiPickersCalendarHeader-switchViewButton{
+  background-color: rgb(31, 31, 31);
+}
+
+/* Calendar Paper */
+div.css-1k4oq0i-MuiPaper-root-MuiPickersPopper-paper{
+  margin-top: 8px;
+  color: rgb(218, 215, 215);
+  background-color: rgb(24, 24, 24);
+}
+
+/* Day Selector */
+button.css-1wy8uaa-MuiButtonBase-root-MuiPickersDay-root {
+  background-color: rgb(252, 249, 249);
+}
+
+/* Current Day */
+button.css-23p0if-MuiButtonBase-root-MuiPickersDay-root:not(.Mui-selected){
+  background-color: #7c7c7c;
+  color: #000001;
+}
+
+/* Day Selector Hover */
+button.css-1wy8uaa-MuiButtonBase-root-MuiPickersDay-root:hover {
+  background-color: rgb(49, 6, 43);
+  color: white;
+}
+
+/* Day selector Selected */
+button.css-1wy8uaa-MuiButtonBase-root-MuiPickersDay-root.Mui-selected   {
+  background-color: rgb(77, 2, 81)!important;
+  color: white;
+}
+
+/* Day Selector Disabled */
+button.css-1wy8uaa-MuiButtonBase-root-MuiPickersDay-root.Mui-disabled:not(.Mui-selected){
+  color: rgb(69, 57, 57);
+  background-color: #0d0d0e;
+}
+
+/* --- IMAGES --- */
+.history-image-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow-y: auto; /* Enable vertical scrolling if the container overflows */
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    margin-top: 30px;
+    height: 100%; /* Set a maximum height for the container */
+}
+
+.image-container {
+    margin-right: 25px;
+    width: 250px; /* Ensure images don't exceed 200px */
+    margin-bottom: 80px;
+  }
+
+.image {
+    width: 100%; /* Ensure all images have the same width */
+    height: 100%; /* Set a fixed height for all images */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 2%;
+  }
+
+.image-text {
+  text-align: center;
+  font-size: 14px;
+  flex: 1;
+  color: #d7d4d8;
+  max-width: 100%;
+  width: auto;
+  padding: 0;
+  margin: 0;
+  padding-right: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
